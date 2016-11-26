@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Js Home Task</title>
+</head>
+<body>
+	<h1>Js Lesson</h1>
+	<script>
+
+
+		var name = prompt('Введите логин пожалуйста ');
+		var pass_ = prompt('Введите пароль ');
+		var answer = prompt('Я вас не знаю ');
+		var cancel = prompt('Вход отменён ');
+		var wellcome = prompt('Добро пожаловать!!! ');
+		var incorrectpass = prompt('Пароль неверен ');
+
+		alert(name);
+		if(name == "Админ"){
+			alert(pass_);
+			if(pass_ == "Черный Властелин"){
+				alert(wellcome);
+			}else if(pass_ == 27){
+				alert(cancel);
+			}else{
+				alert(incorrectpass);
+			}
+
+		} else if(name == 27){
+			alert(cancel);
+
+		}else{
+			alert(answer);
+		}
+
+	</script>
+</body>
+</html>
